@@ -1,5 +1,6 @@
-# WEB315 
- In the first, I used command "dotnet new webapp -o RazorPagesComputer
+# WEB315
+Prabhjeet_Singh_WEB315Assignments
+      In the first, I used command "dotnet new webapp -o RazorPagesComputer
 code -r RazorPagesComputer"  in VScode for creating new web app, then I used another command for lisence that is "dotnet dev-certs https --trust".
 After this, I added models folder and in that I computer.cs, then run the following command "dotnet tool install --global dotnet-ef --version 5.*
 dotnet tool install --global dotnet-aspnet-codegenerator --version 5.*
