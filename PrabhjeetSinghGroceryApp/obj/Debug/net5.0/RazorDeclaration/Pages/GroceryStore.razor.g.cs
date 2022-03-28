@@ -93,16 +93,34 @@ using PrabhjeetSinghGroceryApp.Shared;
 #nullable restore
 #line 21 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
-        private List<FoodItem> GroceryStorelist = new();
-            private string newGroceryStore;
+        private List<FoodItem> GroceryIsle = new();
+            private string newGroceryStoreTitle;
             private void AddGroceryStore()
     {
-        if (!string.IsNullOrWhiteSpace(newGroceryStore))
+        FoodItem newItem;
+        if (!string.IsNullOrWhiteSpace(newGroceryStoreTitle))
         {
-            GroceryStorelist.Add(new FoodItem { Title = newGroceryStore });
-            newGroceryStore = string.Empty;
+            newItem = new FoodItem
+            {
+                Title = newGroceryStoreTitle
+                
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 32 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+                                   
+            };
+            GroceryIsle.Add(newItem);
+            newGroceryStoreTitle = ""; 
         }
     }
+    private bool GroceryStoreIsDone(FoodItem singleFoodItem)
+    {
+        return !singleFoodItem.IsDone;
+    }
+
 
 #line default
 #line hidden

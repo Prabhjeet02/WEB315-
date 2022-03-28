@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": -1560372844,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.Index",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -1446765531,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.Index",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrabhjeetSinghGroceryApp.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1811279213,
         "Kind": "Components.Component",
         "Name": "PrabhjeetSinghGroceryApp.Pages.FetchData",
@@ -111,35 +78,68 @@
         }
       },
       {
-        "HashCode": 1293875507,
+        "HashCode": -1560372844,
         "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.Index",
         "AssemblyName": "PrabhjeetSinghGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GroceryStore"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.Index"
         }
       },
       {
-        "HashCode": -238267504,
+        "HashCode": -1446765531,
         "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.Index",
         "AssemblyName": "PrabhjeetSinghGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+            "TagName": "PrabhjeetSinghGroceryApp.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -607064529,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.App",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.App"
+        }
+      },
+      {
+        "HashCode": 1843100309,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.App",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrabhjeetSinghGroceryApp.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -322,39 +322,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -607064529,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.App",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.App"
-        }
-      },
-      {
-        "HashCode": 1843100309,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.App",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrabhjeetSinghGroceryApp.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
