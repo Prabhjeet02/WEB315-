@@ -91,9 +91,19 @@ using PrabhjeetSinghGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 22 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 26 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
         private List<GroceryIsle> FoodItem = new();
+            private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+    private void DecrementCount()
+    {
+        currentCount--;
+    }
             private string newGroceryStoreTitle;
             private void AddGroceryStore()
     {
@@ -109,7 +119,7 @@ using PrabhjeetSinghGroceryApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 33 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 47 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
                                    
             };
             FoodItem.Add(newItem);

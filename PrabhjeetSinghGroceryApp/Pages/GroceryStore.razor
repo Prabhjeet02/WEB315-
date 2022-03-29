@@ -13,7 +13,11 @@
         <li>
             <input type="checkbox" @bind="GroceryIsle.IsDone" />
             <input @bind="GroceryIsle.Title" />
-            
+            <counter/>
+            @currentCount
+            <button class="btn btn-primary" @onclick="IncrementCount">+</button>
+            <button class="btn btn-primary" @onclick="DecrementCount">-</button>
+
         </li>
         }
     }
@@ -21,6 +25,16 @@
 
 @code {
         private List<GroceryIsle> FoodItem = new();
+            private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+    private void DecrementCount()
+    {
+        currentCount--;
+    }
             private string newGroceryStoreTitle;
             private void AddGroceryStore()
     {
