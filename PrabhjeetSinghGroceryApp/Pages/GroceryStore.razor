@@ -1,43 +1,44 @@
 ﻿@page "/GroceryStore"
-<h3>GroceryStore (@GroceryIsle.Count(singleFoodItem => !singleFoodItem.IsDone))</h3>
+<h3>GroceryStore (@FoodItem.Count(GroceryIsle => !GroceryIsle.IsDone))</h3>
 
 <input placeholder="Search here" @bind="newGroceryStoreTitle"/>
 <button @onclick="AddGroceryStore">Add Items</button>
 
 <ul>
-    @foreach (var GroceryStore in GroceryIsle)
+    @foreach (var GroceryIsle in FoodItem)
     {
-         @if (!GroceryStore.IsDone) 
+         @if (!GroceryIsle.IsDone) 
         {
         
         <li>
-            <input type="checkbox" @bind="GroceryStore.IsDone" />
-            <input @bind="GroceryStore.Title" />
+            <input type="checkbox" @bind="GroceryIsle.IsDone" />
+            <input @bind="GroceryIsle.Title" />
+            
         </li>
         }
     }
 </ul>
 
 @code {
-        private List<FoodItem> GroceryIsle = new();
+        private List<GroceryIsle> FoodItem = new();
             private string newGroceryStoreTitle;
             private void AddGroceryStore()
     {
-        FoodItem newItem;
+        GroceryIsle newItem;
         if (!string.IsNullOrWhiteSpace(newGroceryStoreTitle))
         {
-            newItem = new FoodItem
+            newItem = new GroceryIsle
             {
                 Title = newGroceryStoreTitle
                 @* IsDone = true *@
             };
-            GroceryIsle.Add(newItem);
+            FoodItem.Add(newItem);
             newGroceryStoreTitle = ""; 
         }
     }
-    private bool GroceryStoreIsDone(FoodItem singleFoodItem)
+    private bool GroceryStoreIsDone(GroceryIsle GroceryStore)
     {
-        return !singleFoodItem.IsDone;
+        return !GroceryStore.IsDone;
     }
 
 }

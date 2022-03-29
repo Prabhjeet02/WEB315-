@@ -91,16 +91,16 @@ using PrabhjeetSinghGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 21 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 22 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
-        private List<FoodItem> GroceryIsle = new();
+        private List<GroceryIsle> FoodItem = new();
             private string newGroceryStoreTitle;
             private void AddGroceryStore()
     {
-        FoodItem newItem;
+        GroceryIsle newItem;
         if (!string.IsNullOrWhiteSpace(newGroceryStoreTitle))
         {
-            newItem = new FoodItem
+            newItem = new GroceryIsle
             {
                 Title = newGroceryStoreTitle
                 
@@ -109,16 +109,16 @@ using PrabhjeetSinghGroceryApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 32 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 33 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
                                    
             };
-            GroceryIsle.Add(newItem);
+            FoodItem.Add(newItem);
             newGroceryStoreTitle = ""; 
         }
     }
-    private bool GroceryStoreIsDone(FoodItem singleFoodItem)
+    private bool GroceryStoreIsDone(GroceryIsle GroceryStore)
     {
-        return !singleFoodItem.IsDone;
+        return !GroceryStore.IsDone;
     }
 
 
