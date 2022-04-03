@@ -14,11 +14,10 @@
             <input type="checkbox" @bind="GroceryIsle.IsDone" />
             <input @bind="GroceryIsle.Title" />
             
+            
         </li>
-        }
+        }  
     }
-</ul>
-<ul>
     @foreach (var FoodItem in GroceryIsle)
     {
          @if (!FoodItem.IsDone) 
@@ -27,7 +26,8 @@
         <li>
             <input type="checkbox" @bind="FoodItem.IsDone" />
             <input @bind="FoodItem.Title" />
-            <div>@FoodItem.foodName</div>
+            <div>@GroceryIsle.FoodItem</div>
+            
             
             @quantity
             <button class="btn btn-primary" @onclick="IncrementCount">+</button>
@@ -38,6 +38,7 @@
     }
 </ul>
 
+
 @code {
         private List<GroceryIsle> GroceryStoreList = new List<GroceryIsle>{
             new GroceryIsle
@@ -45,6 +46,7 @@
          Title = "bakery",
          IsDone = false,
          IsleNumber = 1,
+         
        
         },
             new GroceryIsle
@@ -66,8 +68,8 @@
         quantity--;
     }
             private string newGroceryStoreTitle = "";
-            private List<FoodItem> GroceryIsle = new(){
-                
+            private List<FoodItem> GroceryIsle = new List<FoodItem>{
+                foodName= "cake",
                 };
             private void AddGroceryStore()
         {
@@ -78,9 +80,10 @@
             {
                 Title = newGroceryStoreTitle,
                 IsDone = false,
-                
+                FoodItem = "some default value"
             };
             GroceryStoreList.Add(newItem);
+            GroceryIsle.Add(newItem);
             
             newGroceryStoreTitle = ""; 
         }
