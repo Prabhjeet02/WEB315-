@@ -91,38 +91,51 @@ using PrabhjeetSinghGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 41 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
-        private List<GroceryIsle> FoodItem = new();
-            private int currentCount = 0;
+        private List<GroceryIsle> GroceryStoreList = new List<GroceryIsle>{
+            new GroceryIsle
+        {
+         Title = "bakery",
+         IsDone = false,
+         IsleNumber = 1,
+       
+        },
+            new GroceryIsle
+        {
+         Title = "fruits",
+         IsDone = false,
+         IsleNumber = 2,
+         
+        }
+        };
+            private int quantity ;
 
     private void IncrementCount()
     {
-        currentCount++;
+        quantity++;
     }
     private void DecrementCount()
     {
-        currentCount--;
+        quantity--;
     }
-            private string newGroceryStoreTitle;
+            private string newGroceryStoreTitle = "";
+            private List<FoodItem> GroceryIsle = new(){
+                
+                };
             private void AddGroceryStore()
-    {
+        {
         GroceryIsle newItem;
         if (!string.IsNullOrWhiteSpace(newGroceryStoreTitle))
         {
             newItem = new GroceryIsle
             {
-                Title = newGroceryStoreTitle
+                Title = newGroceryStoreTitle,
+                IsDone = false,
                 
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 47 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
-                                   
             };
-            FoodItem.Add(newItem);
+            GroceryStoreList.Add(newItem);
+            
             newGroceryStoreTitle = ""; 
         }
     }

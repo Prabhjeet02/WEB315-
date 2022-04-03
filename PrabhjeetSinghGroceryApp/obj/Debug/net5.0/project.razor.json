@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1811279213,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.FetchData",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -596756221,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.FetchData",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrabhjeetSinghGroceryApp.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -733872365,
         "Kind": "Components.Component",
         "Name": "PrabhjeetSinghGroceryApp.Pages.Counter",
@@ -78,35 +45,35 @@
         }
       },
       {
-        "HashCode": 1293875507,
+        "HashCode": -1811279213,
         "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.FetchData",
         "AssemblyName": "PrabhjeetSinghGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GroceryStore"
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.FetchData"
         }
       },
       {
-        "HashCode": -238267504,
+        "HashCode": -596756221,
         "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.FetchData",
         "AssemblyName": "PrabhjeetSinghGroceryApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+            "TagName": "PrabhjeetSinghGroceryApp.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -144,6 +111,39 @@
         }
       },
       {
+        "HashCode": 1293875507,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GroceryStore"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+        }
+      },
+      {
+        "HashCode": -238267504,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Pages.GroceryStore",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -607064529,
         "Kind": "Components.Component",
         "Name": "PrabhjeetSinghGroceryApp.App",
@@ -173,6 +173,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "PrabhjeetSinghGroceryApp.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1067503630,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 101271070,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -269,59 +322,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1067503630,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 101271070,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
