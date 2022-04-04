@@ -144,39 +144,6 @@
         }
       },
       {
-        "HashCode": -607064529,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.App",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.App"
-        }
-      },
-      {
-        "HashCode": 1843100309,
-        "Kind": "Components.Component",
-        "Name": "PrabhjeetSinghGroceryApp.App",
-        "AssemblyName": "PrabhjeetSinghGroceryApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrabhjeetSinghGroceryApp.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrabhjeetSinghGroceryApp.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1067503630,
         "Kind": "Components.Component",
         "Name": "PrabhjeetSinghGroceryApp.Shared.SurveyPrompt",
@@ -355,6 +322,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "PrabhjeetSinghGroceryApp.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -607064529,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.App",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.App"
+        }
+      },
+      {
+        "HashCode": 1843100309,
+        "Kind": "Components.Component",
+        "Name": "PrabhjeetSinghGroceryApp.App",
+        "AssemblyName": "PrabhjeetSinghGroceryApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrabhjeetSinghGroceryApp.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrabhjeetSinghGroceryApp.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

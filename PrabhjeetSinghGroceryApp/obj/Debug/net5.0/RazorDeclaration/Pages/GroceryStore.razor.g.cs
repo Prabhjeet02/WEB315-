@@ -91,7 +91,7 @@ using PrabhjeetSinghGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 42 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 43 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
         private List<GroceryIsle> GroceryStoreList = new List<GroceryIsle>{
             new GroceryIsle
@@ -108,7 +108,19 @@ using PrabhjeetSinghGroceryApp.Shared;
          IsDone = false,
          IsleNumber = 2,
          
-        }
+        },
+        new GroceryIsle
+        {
+         Title = "vegetables",
+         IsDone = false,
+         IsleNumber = 3,  
+        },
+        new GroceryIsle
+        {
+         Title = "Frozen Food",
+         IsDone = false,
+         IsleNumber = 4,  
+        },
         };
             private int quantity ;
 
@@ -122,7 +134,7 @@ using PrabhjeetSinghGroceryApp.Shared;
     }
             private string newGroceryStoreTitle = "";
             private List<FoodItem> GroceryIsle = new List<FoodItem>{
-                foodName= "cake",
+                
                 };
             private void AddGroceryStore()
         {
@@ -136,10 +148,15 @@ using PrabhjeetSinghGroceryApp.Shared;
                 FoodItem = "some default value"
             };
             GroceryStoreList.Add(newItem);
-            GroceryIsle.Add(newItem);
+            
             
             newGroceryStoreTitle = ""; 
         }
+    }
+    private void IncreaseCount(GroceryIsle quantity)
+    {
+        
+        quantity.quantity =20;
     }
     private bool GroceryStoreIsDone(GroceryIsle GroceryStore)
     {
