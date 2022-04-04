@@ -8,6 +8,7 @@ public class GroceryIsle
     public int IsleNumber { get; set; }
     public string Name { get; set; }
     public decimal Price { get; set; }
+    public string foodName { get; set; }
     public string FoodItem { get; set; }
       
 }

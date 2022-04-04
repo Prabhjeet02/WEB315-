@@ -7,6 +7,7 @@ public class FoodItem
     public int quantity { get; set; }
     public string foodName { get; set; }
     public decimal Price { get; set; }
+    public int IsleNumber { get; set; }
     
 
     

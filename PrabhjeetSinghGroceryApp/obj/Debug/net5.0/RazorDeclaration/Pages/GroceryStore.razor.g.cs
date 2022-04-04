@@ -91,7 +91,7 @@ using PrabhjeetSinghGroceryApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
+#line 44 "E:\Semester 2\Intro to Asp.net\WEB315-\PrabhjeetSinghGroceryApp\Pages\GroceryStore.razor"
        
         private List<GroceryIsle> GroceryStoreList = new List<GroceryIsle>{
             new GroceryIsle
@@ -99,7 +99,9 @@ using PrabhjeetSinghGroceryApp.Shared;
          Title = "bakery",
          IsDone = false,
          IsleNumber = 1,
+         foodName = "cake, pastry",
          
+            
        
         },
             new GroceryIsle
@@ -107,19 +109,22 @@ using PrabhjeetSinghGroceryApp.Shared;
          Title = "fruits",
          IsDone = false,
          IsleNumber = 2,
+         foodName = "Apple, Banana",
          
         },
         new GroceryIsle
         {
          Title = "vegetables",
          IsDone = false,
-         IsleNumber = 3,  
+         IsleNumber = 3,
+         foodName = "ladyfinger, cabage",  
         },
         new GroceryIsle
         {
          Title = "Frozen Food",
          IsDone = false,
-         IsleNumber = 4,  
+         IsleNumber = 4, 
+         foodName = "fries, patty", 
         },
         };
             private int quantity ;
@@ -133,9 +138,7 @@ using PrabhjeetSinghGroceryApp.Shared;
         quantity--;
     }
             private string newGroceryStoreTitle = "";
-            private List<FoodItem> GroceryIsle = new List<FoodItem>{
-                
-                };
+            private List<GroceryIsle> FoodItem = new ();
             private void AddGroceryStore()
         {
         GroceryIsle newItem;
@@ -145,19 +148,16 @@ using PrabhjeetSinghGroceryApp.Shared;
             {
                 Title = newGroceryStoreTitle,
                 IsDone = false,
-                FoodItem = "some default value"
+                foodName = "some default value",
+                IsleNumber = 1,
             };
-            GroceryStoreList.Add(newItem);
-            
+            GroceryStoreList.Add(newItem );
+            FoodItem.Add(newItem);
             
             newGroceryStoreTitle = ""; 
         }
     }
-    private void IncreaseCount(GroceryIsle quantity)
-    {
-        
-        quantity.quantity =20;
-    }
+    
     private bool GroceryStoreIsDone(GroceryIsle GroceryStore)
     {
         return !GroceryStore.IsDone;
