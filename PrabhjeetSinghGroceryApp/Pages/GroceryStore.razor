@@ -21,7 +21,7 @@
         </li>
         }  
     }
-    @foreach (var FoodItem in GroceryStoreList)
+    @foreach (var FoodItem in GroceryIsle)
     {
          @if (!FoodItem.IsDone) 
         {
@@ -87,7 +87,7 @@
         quantity--;
     }
             private string newGroceryStoreTitle = "";
-            private List<GroceryIsle> FoodItem = new ();
+            private List<FoodItem> GroceryIsle = new ();
             private void AddGroceryStore()
         {
         GroceryIsle newItem;
@@ -101,7 +101,7 @@
                 IsleNumber = 1,
             };
             GroceryStoreList.Add(newItem );
-            FoodItem.Add(newItem);
+            
             
             newGroceryStoreTitle = ""; 
         }

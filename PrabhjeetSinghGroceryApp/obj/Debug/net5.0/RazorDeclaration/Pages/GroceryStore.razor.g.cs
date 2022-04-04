@@ -138,7 +138,7 @@ using PrabhjeetSinghGroceryApp.Shared;
         quantity--;
     }
             private string newGroceryStoreTitle = "";
-            private List<GroceryIsle> FoodItem = new ();
+            private List<FoodItem> GroceryIsle = new ();
             private void AddGroceryStore()
         {
         GroceryIsle newItem;
@@ -152,7 +152,7 @@ using PrabhjeetSinghGroceryApp.Shared;
                 IsleNumber = 1,
             };
             GroceryStoreList.Add(newItem );
-            FoodItem.Add(newItem);
+            
             
             newGroceryStoreTitle = ""; 
         }
