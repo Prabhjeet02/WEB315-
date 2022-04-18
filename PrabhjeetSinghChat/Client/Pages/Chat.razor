@@ -13,7 +13,7 @@
 <div class="form-group">
     <label>
         Message:
-        <input @bind="messageInput" @onfocus="typing" size="50" />
+        <input @bind="messageInput"  size="50" />
     </label>
 </div>
 
@@ -32,7 +32,7 @@
     private HubConnection hubConnection;
     private List<string> messages = new List<string>();
     private string userInput;
-    private string typing;
+    
     private string messageInput;
 
     protected override async Task OnInitializedAsync()
@@ -48,21 +48,14 @@
             messages.Add(encodedMsg);
             StateHasChanged();
         });
-        hubConnection.On<string>("onfocus", (message) =>
-        {
-            var encodedMsg = "typing";
-            
-            messages.Add(encodedMsg);
-            StateHasChanged();
-        });
+        
 
         await hubConnection.StartAsync();
     }
  
     async Task Send() =>
         await hubConnection.SendAsync("SendMessage", userInput, messageInput);
-    async Task onfocus() =>
-        await hubConnection.SendAsync("typing");
+    
        
 
     public bool IsConnected =>
