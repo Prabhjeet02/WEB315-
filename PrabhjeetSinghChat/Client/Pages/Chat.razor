@@ -12,7 +12,7 @@
 <div class="form-group">
     <label>
         Message:
-        <input @bind="messageInput" onfocus="typing" size="50" />
+        <input @bind="messageInput" @onfocus="typing" size="50" />
     </label>
 </div>
 <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
@@ -48,19 +48,20 @@
             messages.Add(encodedMsg);
             StateHasChanged();
         });
-        hubConnection.On<string, string>("typing", (user, message) =>
-        {
-            var encodedMsg = $"typing";
-            
-            messages.Add(encodedMsg);
-            StateHasChanged();
-        });
 
         await hubConnection.StartAsync();
     }
 
     async Task Send() =>
         await hubConnection.SendAsync("SendMessage", userInput, messageInput);
+
+        private async Task typing(FocusEventArgs args)
+        {
+            if(hubConnection is not null)
+            {
+                await Send();
+            }
+        }
 
     public bool IsConnected =>
         hubConnection.State == HubConnectionState.Connected;

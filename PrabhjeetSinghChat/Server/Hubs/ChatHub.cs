@@ -11,10 +11,6 @@ namespace PrabhjeetSinghChat.Server.Hubs
 
             return Clients.All.SendAsync("CommingMessageFromAUser", user, message);
         }
-    public Task typing(string message)
-    {
-
-        return Clients.All.SendAsync("typing");
-    }
+    
   }
 }
