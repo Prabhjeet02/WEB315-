@@ -10,8 +10,8 @@ a, .btn-link {
 
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #1bc223;
+    border-color: #0b7939;
 }
 
 .content {
@@ -31,10 +31,10 @@ a, .btn-link {
 }
 
 #blazor-error-ui {
-    background: lightyellow;
+    background: rgb(131, 131, 37);
     bottom: 0;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    display: none;
+    display: block;
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
@@ -48,3 +48,18 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+#messagesList{
+    border-style: solid;
+}
+ul{
+    list-style-type: none;
+    padding: 3px;
+    border: 2px solid red;
+}
+ul li{
+    padding: 9px 18px;
+    border-bottom: 1px solid grey;
+}
+ul li:last-child{
+    border-bottom: none;
+}

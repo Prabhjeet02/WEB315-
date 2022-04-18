@@ -11,6 +11,10 @@ namespace PrabhjeetSinghChat.Server.Hubs
 
             return Clients.All.SendAsync("CommingMessageFromAUser", user, message);
         }
-    
+    public Task onfocus(string message)
+        {
+
+            return Clients.Others.SendAsync("typing", message);
+        }
   }
 }
